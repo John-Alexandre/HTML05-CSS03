@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas simples</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        tr.linha{
+            background-color: lightblue;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dado{
+            background-color: rgb(227, 236, 100);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado da tabela
+    -->
+    <table>
+        <tr> <!--  Primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <TR>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </TR>
+
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td class="dado">C4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
