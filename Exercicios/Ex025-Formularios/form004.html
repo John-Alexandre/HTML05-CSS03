@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            
+        }
+
+        fieldset{
+            background-color: white;
+            padding: 10px;
+            margin: 15px;
+            border: 2px solid rgba(0, 0, 0, 0.121);
+            box-shadow: 5px 5px 10px black;
+        }
+
+        #bottom{
+            text-align: center;
+            
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Exemplo de Formulario</h1>
+    <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php">
         <fieldset>
             <legend>Dados pessoais</legend>
@@ -24,7 +49,7 @@
                 <input type="tel" name="tel" id="itel" required autocomplete="tel"  placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </p>
         </fieldset>
-        <p>
+        <p id="bottom">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
